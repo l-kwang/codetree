@@ -12,6 +12,6 @@ for i in range(Q):
         else:
             print(0)
 
-    elif a[0]==3:
-        for j in range(a[1]-1, a[2]):
-            print(arr[j], end=' ')
+    elif a[0] == 3:
+        # 방법 1: 리스트 슬라이싱과 print(*...) 활용 (추천)
+        print(*arr[a[1]-1 : a[2]])
